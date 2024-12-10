@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full height of the sections */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+}
+
+/* Section 1 Styling */
+#section1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.image-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  justify-content: center;
+  height: 100%;
+  color: black;
+  text-align: left;
+  padding-left: 5%; /* Add some padding for spacing */
+}
+
+.main-text {
+  max-width: 800px;
+}
+
+.main-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+  margin-left: 0;
+}
+
+.secondary-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin: 20px 0 30px;
+  font-weight: 400;
+}
+
+.auth-buttons {
+  margin-top: 12px;
+}
+
+.auth-btn {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #4caf50, #45a3f5);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+  background: linear-gradient(90deg, #45a049, #457bf5);
+}
+
+/* Top-right Sign In Button Styling */
+.auth-btn.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 3;
+  transition: background-color 0.3s ease;
+}
+
+.auth-btn.top-right:hover {
+  background-color: #45a049;
+}
+
+/* Logo and Text Styling */
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1rem; /* Smaller font size */
+  font-weight: normal;
+  color: black; /* Black text color */
+  text-transform: capitalize; /* Ensure "InvestIQ" is capitalized */
+}
+
+
+/* Section 2 Styling */
+#section2 {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#section2 h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#section2 p {
+  font-size: 1.25rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#gif-container {
+  width: 100%;
+  height: auto; /* Adjust container height */
+  position: relative;
+}
+
+#gif-container img {
+  width: 40%; /* Reduced size */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the GIF scales properly */
+  margin: 0 auto; /* Center align the GIF */
+  display: block; /* Center alignment */
+}
+
+/* Section 3 */
+/* Section 3 Styling */
+#section3 {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.left-image,
+.right-image {
+  height: auto;
+}
+
+.left-image {
+  width: 10%;
+}
+
+.right-image {
+  width: 23%;
+}
+
+/* Bouncing Text Styling */
+.bouncing-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.35rem;
+  color: #121111;
+  animation: bounce 1.5s infinite;
+  text-align: center;
+  position: absolute;
+  z-index: 3;
+  top: 3%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Section 4 */
+#section4 {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  position: relative; /* Ensure elements inside are positioned relative to this section */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+#section4 img {
+  position: absolute; /* Ensure the image fills the section */
+  top: 0;
+  left: 0;
+  width: 100%; /* Span the entire width */
+  height: 100%; /* Fill the height of the section */
+  object-fit: cover; /* Ensure the image covers the entire section without distortion */
+  z-index: 1; /* Keep it behind other content */
+}
